@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <unistd.h>
-/* Variables Globales*/
 /* Declaracion de Metodos*/
 void menu();
 void operacionUno(int, int);
@@ -25,10 +24,10 @@ void menu(){
     unsigned int opcion;
     printf("===========================================\n");
     printf("1. Sumador\n");
-    printf("2. Operacion dos\n");
-    printf("3. Operacion tres\n");
-    printf("4. Operacion cuantro\n");
-    printf("5. Operacion quinto\n");
+    printf("2. Copiar Archivo\n");
+    printf("3. Asignar Memoria\n");
+    printf("4. Asignar Numero\n");
+    printf("5. Impresion\n");
     printf("Escoja una opcion: ");
     scanf("%ud", &opcion);
     if (opcion == 1) {
@@ -67,6 +66,7 @@ void menu(){
         scanf("%ud", &bits);
         operacionCinco(bits);
     }
+        
 }
 
 void operacionUno(int ninitial, int nfinal){
