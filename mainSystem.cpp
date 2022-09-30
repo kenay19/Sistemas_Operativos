@@ -7,9 +7,7 @@
 
 void menu();
 int main(int argc, char *argv[]) {
-    char origen[1000];
-    printf("Inserte un comando: ");
-    scanf("%s", origen);
+    char *origen = argv[1];
     int result = system(origen);
     printf("%d",result);
 }
